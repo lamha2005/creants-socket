@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<game>
+	<gameId>2</gameId>
+	<gameType>1</gameType>
+	<gameNameEn>Pluto</gameNameEn>
+	<gameNameVi>Pluto</gameNameVi>
+	<groupId>Pluto</groupId>
+
+	<extension>
+		<fileName>creants-pluto.jar</fileName>
+		<className>com.creants.pluto.PlutoExtension</className>
+	</extension>
+
+	<!-- Config lobby của game -->
+	<lobby>
+		<name>PlutoLobby</name>
+		<groupId>Pluto</groupId>
+		<password></password>
+		<maxUsers>100000</maxUsers>
+		<maxSpectators>0</maxSpectators>
+		<isDynamic>false</isDynamic>
+		<isGame>false</isGame>
+		<isHidden>false</isHidden>
+		<autoRemoveMode>DEFAULT</autoRemoveMode>
+	</lobby>
+
+	<!-- Config room mặc định của game -->
+	<quantityRoom>6</quantityRoom>
+	<maxUserInGame>4</maxUserInGame>
+	<maxSpectatorInGame>10</maxSpectatorInGame>
+</game>

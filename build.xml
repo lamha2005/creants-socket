@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="XYZ Project Build" default="build all" basedir=".">
+	<property name="app.server.name" value="avengers-xyz" />
+	<property name="server.buildDir" value="release/" />
+
+	<target name="build all" depends="make.server.dist" />
+
+	<target name="preparation-server">
+		<mkdir dir="${server.buildDir}" />
+		<delete includeEmptyDirs="true">
+			<fileset dir="${server.buildDir}" includes="**/*" />
+		</delete>
+	</target>
+
+	<target name="make.server.jar" description="Build Server lib" depends="preparation-server">
+		<jar jarfile="${server.buildDir}/${app.server.name}.jar" compress="true">
+
+			<fileset dir="bin" includes="com/**/*.*" />
+
+			<manifest>
+				<attribute name="Main-Class" value="com.avengers.netty.SocketServer"/>
+			</manifest>
+
+		</jar>
+	</target>
+
+	<target name="make.server.dist" depends="make.server.jar">
+		<copy todir="${server.buildDir}/lib">
+			<fileset dir="lib" includes="**/*.jar" />
+		</copy>
+		<copy todir="${server.buildDir}/extensions">
+			<fileset dir="extensions" includes="**/*.jar" />
+		</copy>
+		<copy todir="${server.buildDir}/configs">
+			<fileset dir="configs" includes="**/*.*" />
+		</copy>
+		<copy todir="${server.buildDir}/gameconfig">
+			<fileset dir="gameconfig" includes="**/*.*" />
+		</copy>
+		<!-- 
+		<copy todir="${server.buildDir}/lang">
+			<fileset dir="lang" includes="**/*.*" />
+		</copy>
+		-->
+
+		<copy todir="${server.buildDir}/configs">
+			<fileset dir="${basedir}/bin" includes="log4j.properties" />
+		</copy>
+	</target>
+</project>

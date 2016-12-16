@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<jardesc>
+    <jar path="creants-pluto/lib/core-lib.jar"/>
+    <options buildIfNeeded="true" compress="true" descriptionLocation="/creants-core/desc/core-lib-desc.jardesc" exportErrors="true" exportWarnings="true" includeDirectoryEntries="false" overwrite="false" saveDescription="true" storeRefactorings="false" useSourceFolders="false"/>
+    <storedRefactorings deprecationInfo="true" structuralOnly="false"/>
+    <selectedProjects/>
+    <manifest generateManifest="true" manifestLocation="" manifestVersion="1.0" reuseManifest="false" saveManifest="false" usesManifest="true">
+        <sealing sealJar="false">
+            <packagesToSeal/>
+            <packagesToUnSeal/>
+        </sealing>
+    </manifest>
+    <selectedElements exportClassFiles="true" exportJavaFiles="false" exportOutputFolder="false">
+        <javaElement handleIdentifier="=creants-core/src&lt;com.avengers.netty.socket.gate{IMessage.java"/>
+        <javaElement handleIdentifier="=creants-core/src&lt;com.avengers.netty.socket.gate{IMessageContentInterpreter.java"/>
+        <javaElement handleIdentifier="=creants-core/src&lt;com.avengers.netty.core.exception{CoreException.java"/>
+        <javaElement handleIdentifier="=creants-core/src&lt;com.avengers.netty.core.om{RoomSize.java"/>
+        <javaElement handleIdentifier="=creants-core/src&lt;com.avengers.netty.core.event{SystemNetworkConstant.java"/>
+        <javaElement handleIdentifier="=creants-core/src&lt;com.avengers.netty.socket.util{ConverterUtil.java"/>
+        <javaElement handleIdentifier="=creants-core/src&lt;com.avengers.netty.core.exception{RoomException.java"/>
+        <javaElement handleIdentifier="=creants-core/src&lt;com.avengers.netty.socket.gate.wood{ConstantMessageContentInterpreter.java"/>
+        <javaElement handleIdentifier="=creants-core/src&lt;com.avengers.netty.socket.gate{IUser.java"/>
+        <javaElement handleIdentifier="=creants-core/src&lt;com.avengers.netty.socket.gate.wood{MessageParameter.java"/>
+        <javaElement handleIdentifier="=creants-core/src&lt;com.avengers.netty.core.util{CoreTracer.java"/>
+        <javaElement handleIdentifier="=creants-core/src&lt;com.avengers.netty.core.util{DefaultMessageFactory.java"/>
+        <javaElement handleIdentifier="=creants-core/src&lt;com.avengers.netty.core.om{Room.java"/>
+        <javaElement handleIdentifier="=creants-core/src&lt;com.avengers.netty.socket.gate.wood{User.java"/>
+        <javaElement handleIdentifier="=creants-core/src&lt;com.avengers.netty.core.om{IRoom.java"/>
+        <javaElement handleIdentifier="=creants-core/src&lt;com.avengers.netty.core.event{ICoreEvent.java"/>
+        <javaElement handleIdentifier="=creants-core/src&lt;com.avengers.netty.socket.gate.wood{Message.java"/>
+        <javaElement handleIdentifier="=creants-core/src&lt;com.avengers.netty.core.extensions"/>
+    </selectedElements>
+</jardesc>
